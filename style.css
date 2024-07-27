@@ -1,1 +1,48 @@
+/* General Reset and Basic Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 
+header, footer, section {
+    padding: 1em;
+    text-align: center;
+}
+
+#hero {
+    background-color: #ff00bf;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* SoundCloud Section */
+#soundcloud {
+    background-color: #00eeff;
+    padding: 2em 0;
+}
+
+#soundcloud-embed-container {
+    max-width: 800px; /* Or any size that fits your design */
+    margin: 0 auto;   /* Center the container */
+    padding: 1em;
+}
+
+iframe {
+    width: 100%;
+    height: 166px;
+    border: none;
+}
+
+/* Style for SoundCloud profile link */
+#soundcloud-profile a {
+    text-decoration: none;
+    color: #2600ff; /* SoundCloud green color */
+    font-weight: bold;
+}
+
+#soundcloud-profile a:hover {
+    text-decoration: underline;
+}
