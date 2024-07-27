@@ -1,31 +1,45 @@
-/* General styling for body and main sections */
+/* General styling for body */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    text-align: center; /* Center text inside the body */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    text-align: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
 }
 
 /* Header and Footer Styling */
 header, footer {
-    padding: 1em;
-    background-color: #f4f4f4; /* Optional: Add background color */
+    width: 100%;
+    background-color: #ddd;
+    padding: 1em 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-footer {
-    background-color: #ddd; /* Optional: Different color for footer */
+header h1, footer p {
+    margin: 0;
 }
 
-/* Centering main sections */
+/* Center main sections */
 section {
+    width: 80%; /* Adjust width as needed */
+    max-width: 1200px; /* Max width for larger screens */
     padding: 2em 1em;
+    box-sizing: border-box; /* Include padding and border in width */
+    background-color: #fff;
+    margin: 1em 0;
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Shadow for depth */
 }
 
-/* Hero section */
+/* Hero Section */
 #hero {
     background-color: #f4f4f4;
+    padding: 2em 0;
 }
 
-/* Center the image in the hero section */
 #hero .image-container {
     display: flex;
     justify-content: center; /* Center image horizontally */
@@ -54,7 +68,6 @@ form {
     padding: 2em 0;
 }
 
-/* Style for SoundCloud profile link */
 #soundcloud-profile a {
     text-decoration: none;
     color: #1db954; /* SoundCloud green color */
@@ -65,8 +78,10 @@ form {
     text-decoration: underline;
 }
 
-/* Make sure everything inside #soundcloud-profile is centered */
-#soundcloud-profile p {
-    margin: 0 auto; /* Center the paragraph */
-    display: inline-block; /* Center paragraph itself */
+/* Utility for centering elements vertically and horizontally */
+.centered-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
